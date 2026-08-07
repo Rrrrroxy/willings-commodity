@@ -59,19 +59,15 @@
             box-shadow: 0 6px 18px #00000020;
         }
 
-        /* 核心修改：固定 4:3 比例容器，图片 contain 完整适应不裁剪 */
+        /* 核心修改：按图片原图比例完整展示，零裁剪、无留白边框 */
         .product-img-wrap {
             width: 100%;
-            aspect-ratio: 4 / 3;
-            background: #f0f0f0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            background: #ffffff;
+            overflow: hidden;
         }
         .product-img-wrap img {
             width: 100%;
-            height: 100%;
-            object-fit: contain;
+            height: auto;
             display: block;
         }
 
@@ -129,7 +125,7 @@
         <!-- Bathroom Series -->
         <div class="product-card">
             <div class="product-img-wrap">
-                <img src="./77906b57bf03ea28c7f44d3acd0b7d49.jpg" alt="Bathroom Storage">
+                <img src="./77906b57bf03ea28c7f444d3acd0b7d49.jpg" alt="Bathroom Storage">
             </div>
             <div class="product-info">
                 <h3>Bathroom Series</h3>
